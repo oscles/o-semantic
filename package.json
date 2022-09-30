@@ -1,0 +1,45 @@
+{
+  "name": "o-semantic",
+  "version": "1.0.0",
+  "description": "CLI semantic commit",
+  "keywords": [
+    "semantic",
+    "commit",
+    "cli",
+    "conventional"
+  ],
+  "main": "lib/index.js",
+  "bin": {
+    "oc": "lib/index.js",
+    "o-semantic": "lib/index.js"
+  },
+  "files": [
+    "lib",
+    "README"
+  ],
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@digitalroute/cz-conventional-changelog-for-jira": "7.4.0",
+    "@ryansonshine/commitizen": "4.2.8",
+    "commander": "9.4.1",
+    "commitizen": "4.2.5",
+    "inquirer": "8.0.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscles/o-semantic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oscles/o-semantic/issues"
+  },
+  "homepage": "https://github.com/oscles/o-semantic#readme"
+}
