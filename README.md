@@ -4,6 +4,56 @@
 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
+O-semantic is a library that allows to write commits following the conventions, it has two types of configurations to establish the structure of the commit:
+
+### Default
+
+```bash
+feat(lang): add Polish language
+```
+
+```bash
+docs: correct spelling of CHANGELOG
+```
+
+```bash
+fix: prevent racing of requests
+
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
+
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
+
+Reviewed-by: Z
+Refs: #123
+```
+
+### Jira
+
+```bash
+feat(lang): [SKCH-1789] add Polish language
+```
+
+```bash
+docs: [SKCH-1789] correct spelling of CHANGELOG
+```
+
+```bash
+fix: [SKCH-1789] prevent racing of requests
+
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
+
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
+
+Reviewed-by: Z
+Refs: [SKCH-1789]
+```
+
+<br>
+
 ## Installing the command line tool
 
 O-semantic is currently tested against Node.js 14, 16 & 18, although it may work in
@@ -32,6 +82,22 @@ or as an npm script:
   "scripts": {
     "commit": "oc"
   }
+```
+
+```bash
+oc -h  #show help you can use --help flag
+```
+
+```bash
+Usage: o-semantic [options]
+
+CLI to create semantic commits
+
+Options:
+  -V, --version  output the version number
+  -d, --default  use default convention
+  -j, --jira     use jira convention
+  -h, --help     display help for command
 ```
 
 ## Related projects
