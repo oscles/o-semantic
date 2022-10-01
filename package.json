@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "start": "node lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version"
   },
   "author": "",
   "license": "ISC",
@@ -28,12 +28,12 @@
     "@ryansonshine/commitizen": "4.2.8",
     "commander": "9.4.1",
     "commitizen": "4.2.5",
-    "inquirer": "8.0.0"
+    "inquirer": "8.0.0",
+    "standard-version": "9.5.0"
   },
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oscles/o-semantic.git"
